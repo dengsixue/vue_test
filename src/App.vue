@@ -5,12 +5,12 @@
 </template>
 
 <script>
-var vm=new Vue({
-  el:'#app',
-  data () {
-    msg:'我是那妞'
-  }
-})
+// var vm=new Vue({
+//   el:'#app',
+//   data () {
+//     msg:'我是那妞'
+//   }
+// })
 
 export default {
   name: 'App'
