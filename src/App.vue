@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <button>{{ message }} </button>
+    <button @click="show()">{{ msg }}</button>
   </div>
 </template>
 
@@ -13,7 +13,17 @@
 // })
 
 export default {
-  name: 'App'
+  name: 'App',
+  data () {
+    return {
+      msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    show () {
+      this.msg = 'sadfsadfsadf'
+    }
+  }
 }
 </script>
 
@@ -26,8 +36,9 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
-button{
-  width: auto;
+
+button {
+  width: 800px;
   height: 30px;
 }
 
